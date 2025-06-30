@@ -8,24 +8,15 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <audio id="birthday-audio" autoplay loop>
-  <source src="audio/birthday.mp3" type="audio/mpeg">
-  ನಿಮ್ಮ ಬ್ರೌಸರ್ ಆಡಿಯೋ ಪ್ಲೇ ಮಾಡಲು ಸಹಾಯ ಮಾಡುವುದಿಲ್ಲ.
+  <audio id="bgmusic" autoplay loop muted>
+  <source src="https://raw.githubusercontent.com/sarikarajput15/amma_bday/main/audio/birthday.mp3" type="audio/mpeg">
 </audio>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const audio = document.getElementById('birthday-audio');
-    audio.muted = false;
-    audio.play().catch(() => {
-      console.log("Autoplay blocked, waiting for user interaction...");
-    });
-  });
   document.addEventListener("click", function () {
     const audio = document.getElementById("bgmusic");
-    if (audio && audio.paused) {
-      audio.play();
-    }
+    audio.muted = false;
+    if (audio.paused) audio.play();
   });
 </script>
 
