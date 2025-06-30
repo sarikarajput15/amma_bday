@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+  <meta charset="UTF-8">
+  <title>ಅಮ್ಮಗೆ ಹುಟ್ಟುಹಬ್ಬದ ಶುಭಾಶಯಗಳು</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <audio id="birthday-audio" autoplay loop>
+  <source src="./audio/Nagutha-Nagutha-Baalu-[AudioTrimmer.com].mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.onload = function () {
+    const audio = document.getElementById('birthday-audio');
+    audio.muted = false;
+    audio.play().catch(() => {
+      console.log("Autoplay blocked — waiting for interaction");
+    });
+  }
+</script>
+
+  <div class="portrait-card">
+    <div class="photo">
+      <img src="./image/IMG-20250628-WA0028.jpg" class="photo-final" alt="Chachi Photo">
+    </div>
+    <h1>ಅಮ್ಮಗೆ ಹುಟ್ಟುಹಬ್ಬದ ಶುಭಾಶಯಗಳು 💖</h1>
+    <div class="message">
+      <p>ನೀನು ನನ್ನ ಮೊದಲ ಪ್ರೀತಿ, ನನ್ನ ಪ್ರಭಾತದ ಪ್ರೀತಿ.</p>
+      <p>ನಿನ್ನ ನಗುವಿನಲ್ಲಿ ನನ್ನ ವಿಶ್ವಾಸವಿದೆ, ನಿನ್ನ ಮೌನದಲ್ಲಿ ನನ್ನ ಶಾಂತಿ.</p>
+      <p>ನೀನು ನೀಡಿದ ಪ್ರೀತಿ ಅನಂತ, ನಿನ್ನ ಆಶೀರ್ವಾದ ನನ್ನ ಪಥ.</p>
+      <p>ಈ ದಿನ ನಿನ್ನ ಕನಸುಗಳು ನಿಜವಾಗಲಿ, ನಿನ್ನ ಜೀವನ ಬೆಳಗಲಿ!</p>
+      <p>ಅಮ್ಮ, ನಾನು ನಿನ್ನನ್ನು ಬಹುಪಾಲು ಪ್ರೀತಿಸುತ್ತೇನೆ ❤️</p>
+    </div>
+<div style="margin-top: 20px;">
+  <button onclick="document.getElementById('letter').style.display='block'; this.style.display='none';"
+          style="padding: 10px 20px; background-color: #e60073; color: white; border: none; border-radius: 10px; cursor: pointer; font-size: 16px;">
+    ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು ನನ್ನ ಮನಸ್ಸಿನ ಪತ್ರ ಓದಿ 💌
+  </button>
+  <div id="letter" style="display:none; margin-top: 20px; background-color: #fff0f5; padding: 15px; border-radius: 15px; border: 1px solid #e60073; color: #333; font-size: 16px;">
+    ಅಮ್ಮನಿಗೆ,<br><br>
+    ನಿನಗೆ ಹುಟ್ಟುಹಬ್ಬದ ಹಾರ್ದಿಕ ಶುಭಾಶಯಗಳು! ನನ್ನ ಜೀವನದ ಪ್ರತಿಯೊಂದು ಹಂತದಲ್ಲೂ ನೀನು ನನ್ನೊಂದಿಗೆ ಇದ್ದೆ. ನಿನ್ನ ಪ್ರೀತಿ, ನಿನ್ನ ಹಾಸ್ಯ, ನಿನ್ನ ತಾಳ್ಮೆ – ಎಲ್ಲವನ್ನೂ ನಾನು ಗೌರವಿಸುತ್ತೇನೆ. 
+    ಈ ಪುಟ ಮಾತ್ರ ಒಂದು ಗಿಫ್ಟ್ ಆಗಿರಬಹುದು, ಆದರೆ ನಿನ್ನ ನೆನಪುಗಳು ಎಂದೆಂದಿಗೂ ನನ್ನ ಹೃದಯದಲ್ಲಿರುತ್ತವೆ.<br><br>
+    ನಿನ್ನ ಮಗ ❤️
+  </div>
+</div>
+
+    <div class="heart">❤️</div>
+  </div>
+  <div class="floating-hearts"></div>
+  <div class="balloons"></div>
+  <script>
+    for (let i = 0; i < 20; i++) {
+      const heart = document.createElement("span");
+      heart.innerHTML = "💗";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (3 + Math.random() * 4) + "s";
+      heart.style.fontSize = (18 + Math.random() * 20) + "px";
+      heart.style.top = Math.random() * 100 + "vh";
+      document.querySelector(".floating-hearts").appendChild(heart);
+    }
+    const colors = ["#ff4d4d", "#ffcc00", "#66ccff", "#cc66ff", "#00cc99"];
+    for (let i = 0; i < 20; i++) {
+      const balloon = document.createElement("span");
+      balloon.style.left = Math.random() * 100 + "vw";
+      balloon.style.background = colors[Math.floor(Math.random() * colors.length)];
+      balloon.style.animationDuration = (5 + Math.random() * 5) + "s";
+      balloon.style.width = (30 + Math.random() * 20) + "px";
+      balloon.style.height = (40 + Math.random() * 30) + "px";
+      document.querySelector(".balloons").appendChild(balloon);
+    }
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+  window.onload = () => {
+    confetti({
+      particleCount: 150,
+      spread: 100,
+      origin: { y: 0.6 }
+    });
+  };
+</script>
+
+</body>
+</html>
