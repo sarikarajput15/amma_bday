@@ -21,6 +21,12 @@
       console.log("Autoplay blocked, waiting for user interaction...");
     });
   });
+  document.addEventListener("click", function () {
+    const audio = document.getElementById("bgmusic");
+    if (audio && audio.paused) {
+      audio.play();
+    }
+  });
 </script>
 
   <div class="portrait-card">
